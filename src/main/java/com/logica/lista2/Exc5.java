@@ -42,9 +42,13 @@ public class Exc5 {
         password = sc.nextLine();
 
         do {
-            System.out.println("Digite 1 para logar - Digite '0' para sair! ");
+            // Aqui você poderá testar todas as formas de erros e sucesso.
+            // Até digitar 0.
+            System.out.println("Digite 1 para logar | Digite '0' para sair! ");
             option = sc.nextInt();
-            Logon(login, password);
+            if (option != 0) {
+                Logon(login, password);
+            }
         }
         while (option!=0);
     }
