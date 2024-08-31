@@ -5,8 +5,21 @@ package com.logica.lista2;
 //podem entrar nos eventos. Entre 16 e 18 anos somente acompanhado pelos
 //responsáveis. Maiores de 18 podem entrar normalmente.
 
+import java.util.Scanner;
+
 public class Exc4 {
     public static void main(String[] args) {
+        int idade;
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite sua idade: ");
+        idade = sc.nextInt();
+        if (idade < 16) {
+            System.out.println("Proibido a entrada para menores de 16 anos.");
+        } else if (idade < 18) {
+            System.out.println("Idade entre 16 e 17 anos, somente acompanhado dos pais.");
+        }else{
+            System.out.println("Entrada permitida.");
+        }
     }
 }
