@@ -3,18 +3,6 @@ package com.logica.lista1;
 //5) Construa um algoritmo que calcule o valor de um terreno
 //baseado na sua área e valor por m2.
 //
-//        6) Construa um algoritmo que leia 1- a distância percorrida
-//por um veículo em km 2- o total gasto em combustível em
-//litros. No final deverá ser respondido o consumo médio deste
-//veículo em km/l.
-//
-//7) Escreva um programa que receba quatro notas de um
-//aluno e calcule a média aritmética dessas notas.
-//
-//        8) Suponha que voce trabalhe em um laboratório e seu
-//colega mediu a temperatura de um objeto em Fahrenheit.
-//Escreva um programa capaz de converter em Celsius.
-
 
 import java.util.Scanner;
 
