@@ -6,4 +6,7 @@ package com.logica.lista2;
 //responsáveis. Maiores de 18 podem entrar normalmente.
 
 public class Exc4 {
+    public static void main(String[] args) {
+
+    }
 }
