@@ -1,13 +1,18 @@
 package com.logica.lista2;
-
-//7) Escreva um programa Identificador de Divisibilidade, isto é, que identifique se
-//um determinado número informado pelo usuário é divisível por X (Que também
-//deve ser informado pelo usuário)
-
 import java.util.Scanner;
 
 public class Exc7 {
     public static void main(String[] args) {
+        System.out.println("""
+                
+                Exercício 2
+                
+                7) Escreva um programa Identificador de Divisibilidade,
+                isto é, que identifique se um determinado número
+                informado pelo usuário é divisível por X
+                (Que também deve ser informado pelo usuário)
+                
+                """);
         int dividendo, divisor;
         Scanner sc = new Scanner(System.in);
 

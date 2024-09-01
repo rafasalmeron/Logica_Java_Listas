@@ -1,13 +1,21 @@
 package com.logica.lista2;
 
-// 1) Escreva um programa que recebe um número
-// digitado pelo usuário e responda
-// se o número inserido é par ou ímpar ou 0.
+
 
 import java.util.Scanner;
 
 public class Exc1 {
     public static void main(String[] args) {
+        System.out.println("\nAQUI COMEÇAR A LISTA 2");
+        System.out.println("""
+                
+                Exercício 1
+                
+                1) Escreva um programa que recebe um número
+                digitado pelo usuário e responda
+                se o número inserido é par ou ímpar ou 0.
+                
+                """);
         long num;
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite um valor: ");

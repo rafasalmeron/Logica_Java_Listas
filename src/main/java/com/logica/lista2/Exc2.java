@@ -1,12 +1,17 @@
 package com.logica.lista2;
-
-//2) Desenvolva um algoritmo que seja capaz de receber dois números digitados
-//pelo usuário e diga qual deles é maior.
-
 import java.util.Scanner;
 
 public class Exc2 {
     public static void main(String[] args) {
+        System.out.println("""
+                
+                Exercício 2
+                
+                2) Desenvolva um algoritmo que seja capaz de receber
+                dois números digitados
+                pelo usuário e diga qual deles é maior.
+                
+                """);
         int n1, n2;
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite o primeiro número: ");

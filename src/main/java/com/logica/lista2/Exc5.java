@@ -1,14 +1,10 @@
 package com.logica.lista2;
-
-//5) Crie um algoritmo que receba login e senha e verifique as credenciais.
-// Caso algum deles estiver errado o programa deve retornar ao usuário quais das opções
-// está errada, se é o login ou a senha.
-
 import java.util.Objects;
 import java.util.Scanner;
 
 public class Exc5 {
     public static void Logon(String log, String pass) {
+
         String loginVerification, passwordVerification;
         Scanner sc = new Scanner(System.in);
 
@@ -31,6 +27,15 @@ public class Exc5 {
         }
     }
     public static void main(String[] args) {
+        System.out.println("""
+                
+                Exercício 5
+                
+                5) Crie um algoritmo que receba login e senha e verifique as credenciais.
+                Caso algum deles estiver errado o programa deve retornar ao usuário quais das opções
+                está errada, se é o login ou a senha.
+                
+                """);
         String login, password;
         int option;
 
@@ -42,8 +47,6 @@ public class Exc5 {
         password = sc.nextLine();
 
         do {
-            // Aqui você poderá testar todas as formas de erros e sucesso.
-            // Até digitar 0.
             System.out.println("Digite 1 para logar | Digite '0' para sair! ");
             option = sc.nextInt();
             if (option != 0) {

@@ -1,13 +1,16 @@
 package com.logica.lista1;
-
-//5) Construa um algoritmo que calcule o valor de um terreno
-//baseado na sua área e valor por m2.
-//
-
 import java.util.Scanner;
 
 public class Exc5 {
     public static void main(String[] args) {
+        System.out.println("""
+                
+                Exercício 5
+                
+                5) Construa um algoritmo que calcule o valor de um terreno
+                baseado na sua área e valor por m2.
+                
+                """);
         double largura,
                 comprimento,
                 m2,
