@@ -1,9 +1,20 @@
-## Listas de excercícios para a prática de aprendizado durante a Residência.
+<img align="right" alt="C"  src="https://github.com/user-attachments/assets/d7bed0b1-00c3-4680-baf3-dbc4194c77fe"/>
 
-### Lista 1
+## Listas de excercícios para a prática de aprendizado durante a Residência.  
+
+
+Foi feito todos os exercícios proposto.
+Para deixar mais dinamico criei uma forma de rodar cada exércio de uma única vez,
+ou caso queira acessa um exercício em especifico de qualquer uma das 2 listas.
+
+
+### Lista 1  
 [Lista  1 - Operações Matemáticas.pdf](https://github.com/user-attachments/files/16827147/Lista.1.-.Operacoes.Matematicas.pdf)  
 ### Lista 2
 [Lista 2 - Desvios Condicionais.pdf](https://github.com/user-attachments/files/16827149/Lista.2.-.Desvios.Condicionais.pdf)
+
+
+
 
 <h2 id="desenvolvedor">:construction_worker: Desenvolvedor</h2>
 <table> 
@@ -15,5 +26,3 @@
 </table>
 
 👋🏽 Entre em contato!
-
-<a href="#top">Voltar para o topo</a>
