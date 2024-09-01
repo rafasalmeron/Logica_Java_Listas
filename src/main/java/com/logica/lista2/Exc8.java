@@ -3,14 +3,16 @@ import java.util.Scanner;
 
 public class Exc8 {
 
-    static class Score {
+    public static class Score {
         int goals = 0;
         int fails = 0;
+        String mensagemSW;
+        Scanner sc = new Scanner(System.in);
+        String option;
+
     }
 
     public static void question1(Score scr) {
-
-        Scanner sc = new Scanner(System.in);
             System.out.println("""
                 Qual é o maior planeta do sistema solar?
                 a) Terra
@@ -19,8 +21,8 @@ public class Exc8 {
                 d)Saturno
                 """);
 
-            String option = sc.nextLine();
-            String mensagem = switch (option) {
+            scr.option = scr.sc.nextLine();
+            scr.mensagemSW = switch (scr.option) {
                 case "a","b","d" -> {
                     scr.fails++;
                     yield "Resposta errada!";
@@ -33,7 +35,7 @@ public class Exc8 {
                     yield "opção invalida!";
                 }
             };
-        System.out.println(mensagem);
+        System.out.println(scr.mensagemSW);
     }
 
     public static void question2(Score scr) {
@@ -45,11 +47,8 @@ public class Exc8 {
                 c) Leonardo da Vinci
                 d) Claude Monet
                 """);
-
-        Scanner sc = new Scanner(System.in);
-        String option;
-        option = sc.nextLine();
-        String mensagem = switch (option) {
+        scr.option = scr.sc.nextLine();
+        scr.mensagemSW = switch (scr.option) {
             case "a","b","d" -> {
                 scr.fails++;
                 yield "Resposta errada!";
@@ -62,7 +61,7 @@ public class Exc8 {
                 yield "opção invalida!";
             }
         };
-        System.out.println(mensagem);
+        System.out.println(scr.mensagemSW);
     }
 
     public static void question3(Score scr) {
@@ -75,10 +74,8 @@ public class Exc8 {
                 d) Espanha
                 """);
 
-        Scanner sc = new Scanner(System.in);
-        String option;
-        option = sc.nextLine();
-        String mensagem = switch (option) {
+        scr.option = scr.sc.nextLine();
+         scr.mensagemSW = switch (scr.option) {
             case "a","c","d" -> {
                 scr.fails++;
                 yield "Resposta errada!";
@@ -91,7 +88,7 @@ public class Exc8 {
                 yield "opção invalida!";
             }
         };
-        System.out.println(mensagem);
+        System.out.println(scr.mensagemSW);
     }
 
     public static void question4(Score scr) {
@@ -104,10 +101,8 @@ public class Exc8 {
                 d) Bangkok
                 """);
 
-        Scanner sc = new Scanner(System.in);
-        String option;
-        option = sc.nextLine();
-        String mensagem = switch (option) {
+        scr.option = scr.sc.nextLine();
+        scr.mensagemSW = switch (scr.option) {
             case "a","b","d" -> {
                 scr.fails++;
                 yield "Resposta errada!";
@@ -120,7 +115,7 @@ public class Exc8 {
                 yield "opção invalida!";
             }
         };
-        System.out.println(mensagem);
+        System.out.println(scr.mensagemSW);
     }
 
     public static void question5(Score scr) {
@@ -132,11 +127,8 @@ public class Exc8 {
                 c) Neil Armstrong
                 d) Michael Collins
                 """);
-
-        Scanner sc = new Scanner(System.in);
-        String option;
-        option = sc.nextLine();
-        String mensagem = switch (option) {
+        scr.option = scr.sc.nextLine();
+        scr.mensagemSW = switch (scr.option) {
             case "a","b","d" -> {
                 scr.fails++;
                 yield "Resposta errada!";
@@ -149,7 +141,7 @@ public class Exc8 {
                 yield "opção invalida!";
             }
         };
-        System.out.println(mensagem);
+        System.out.println(scr.mensagemSW);
     }
 
     public static void main(String[] args) {
@@ -178,6 +170,7 @@ public class Exc8 {
                 }
                 answer++;
             }
+        System.out.println("RESULTADO");
         System.out.println("Perguntas: " + (answer+1));
         System.out.println("Acertos: " + scr.goals);
         System.out.println("Erros: " + scr.fails);
