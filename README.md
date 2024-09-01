@@ -21,6 +21,8 @@ isso também será possível.
 3. Maven 4.0
 4. Dependencia: spring-boot-devtools
 
+#### Obs:
+Certifique-se de estar utilizando a Branch Master
 
 <h2 id="desenvolvedor">:construction_worker: Desenvolvedor</h2>
 <table> 
