@@ -3,9 +3,11 @@
 ## Listas de excercícios para a prática de aprendizado durante a Residência.  
 
 
-Foi feito todos os exercícios proposto.
-Para deixar mais dinamico criei uma forma de rodar cada exércio de uma única vez,
-ou caso queira acessa um exercício em especifico de qualquer uma das 2 listas.
+Todos os exercícios propostos foram realizados.  
+Para tornar o processo mais dinâmico,  
+criei uma forma de executar todos os exercícios de uma só vez.  
+No entanto, se preferir acessar um exercício específico de qualquer uma das duas listas,  
+isso também será possível.  
 
 
 ### Lista 1  
