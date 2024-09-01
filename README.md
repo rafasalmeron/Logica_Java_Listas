@@ -15,7 +15,11 @@ isso também será possível.
 ### Lista 2
 [Lista 2 - Desvios Condicionais.pdf](https://github.com/user-attachments/files/16827149/Lista.2.-.Desvios.Condicionais.pdf)
 
-
+#### Detalhes do Projeto  
+1. Java 17
+2. SpringBoot 3.3.3
+3. Maven 4.0
+4. Dependencia: spring-boot-devtools
 
 
 <h2 id="desenvolvedor">:construction_worker: Desenvolvedor</h2>
