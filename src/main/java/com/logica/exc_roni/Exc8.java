@@ -1,4 +1,4 @@
-package com.logica;
+package com.logica.exc_roni;
 
 import java.util.Scanner;
 
@@ -25,7 +25,6 @@ public class Exc8 {
         System.out.println("Digite o valor da largura: ");
         largura = sc.nextDouble();
 
-        m2=largura*comprimento;
         m2 = largura * comprimento;
         System.out.println("RESULTADO \n"+
                 "Metros Quadrados: "+m2);

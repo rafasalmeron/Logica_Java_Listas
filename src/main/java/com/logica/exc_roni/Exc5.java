@@ -1,4 +1,4 @@
-package com.logica;
+package com.logica.exc_roni;
  /*5) Uma empresa paga R$10.00 por hora normal trabalhada e R$ 15.00 por hora extra.
 	Escreva um algoritmo que leia o total de horas normais trabalhadas e o total de
 	horas extras trabalhadas por um empregado em um ano e calcule o salário anual deste trabalhador.

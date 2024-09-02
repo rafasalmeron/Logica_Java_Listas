@@ -1,4 +1,4 @@
-package com.logica;
+package com.logica.exc_roni;
 
 import java.util.Scanner;
 

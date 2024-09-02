@@ -1,4 +1,4 @@
-package com.logica;
+package com.logica.exc_roni;
      /*6) Escreva um programa que leia a temperatura em Celsius e retorne o valor em Fahrenheit
 		F = C x 1,8 + 32
 		Para que você consiga converter de grau Celsius para Fahrenheit, basta multiplicar

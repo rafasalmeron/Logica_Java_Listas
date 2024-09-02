@@ -12,5 +12,7 @@ public class Exc1 {
         n1 = sc.nextInt();
         System.out.println("Digite o segundo número: ");
         n2 = sc.nextInt();
+
+        System.out.println(n1+n2);
     }
 }

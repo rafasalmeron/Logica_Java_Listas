@@ -9,7 +9,6 @@ public class Exc8 {
         String mensagemSW;
         Scanner sc = new Scanner(System.in);
         String option;
-
     }
 
     public static void question1(Score scr) {

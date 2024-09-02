@@ -1,4 +1,4 @@
-package com.logica;
+package com.logica.exc_roni;
 import java.util.Scanner;
 
 //2)Construir um algoritmo que leia um número e exiba na tela o seu
