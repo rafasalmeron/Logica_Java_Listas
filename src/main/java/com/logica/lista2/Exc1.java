@@ -1,7 +1,4 @@
 package com.logica.lista2;
-
-
-
 import java.util.Scanner;
 
 public class Exc1 {

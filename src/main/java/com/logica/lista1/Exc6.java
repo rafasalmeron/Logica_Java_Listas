@@ -1,7 +1,5 @@
 package com.logica.lista1;
-
-
-//
+import com.logica.exc_roni.Exc9;
 
 import java.util.Scanner;
 
@@ -18,15 +16,6 @@ public class Exc6 {
                 veículo em km/l.
                 
                 """);
-        int km, gas;
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Qual a distancia percorrida em km?");
-        km = sc.nextInt();
-        System.out.println("Total gasto com combustivél em litros?");
-        gas = sc.nextInt();
-
-        System.out.println("Seu carro teve o consumo  médio de "+(km/gas)+" km/l.");
+        Exc9.main(new String[0]);
     }
 }

@@ -16,10 +16,9 @@ public class Exc8 {
                 Qual é o maior planeta do sistema solar?
                 a) Terra
                 b) Marte
-                c)Júpter
-                d)Saturno
+                c) Júpter
+                d) Saturno
                 """);
-
             scr.option = scr.sc.nextLine();
             scr.mensagemSW = switch (scr.option) {
                 case "a","b","d" -> {

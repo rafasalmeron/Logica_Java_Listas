@@ -45,7 +45,6 @@ public class Exc5 {
         login = sc.nextLine();
         System.out.println("Crie sua Senha:");
         password = sc.nextLine();
-
         do {
             System.out.println("Digite 1 para logar | Digite '0' para sair! ");
             option = sc.nextInt();
