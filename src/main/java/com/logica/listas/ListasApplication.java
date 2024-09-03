@@ -9,6 +9,7 @@ public class ListasApplication {
 
     public static void allIn(String[] args) {
         //LISTA 1
+
         com.logica.lista1.Exc1.main(args);
         com.logica.lista1.Exc2.main(args);
         com.logica.lista1.Exc3.main(args);
@@ -89,7 +90,6 @@ public class ListasApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ListasApplication.class, args);
-
         int esc;
         Scanner sc = new Scanner(System.in);
 
@@ -111,7 +111,6 @@ public class ListasApplication {
                 default -> System.out.println("Opção inválida!");
             }
         } while (esc != 0);
-
         System.out.println("...FIM...");
     }
 }
