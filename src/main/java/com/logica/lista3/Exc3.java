@@ -1,12 +1,14 @@
 package com.logica.lista3;
-
-//3) Escreva um código que receba dois números inteiros e escreva todos os
-//números pares entre eles.
-
 import java.util.Scanner;
 
 public class Exc3 {
     public static void main(String[] args) {
+        System.out.println("""
+                
+                3) Escreva um código que receba dois números inteiros e escreva todos os
+                números pares entre eles.
+                
+                """);
         int num1, num2, menor, maior;
 
         Scanner sc = new Scanner(System.in);

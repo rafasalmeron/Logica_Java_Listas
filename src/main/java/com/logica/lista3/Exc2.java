@@ -1,12 +1,14 @@
 package com.logica.lista3;
-
-//2) Desenvolva um programa que receba um número do usuário e escreva a
-//tabuada dele.
-
 import java.util.Scanner;
 
 public class Exc2 {
     public static void main(String[] args) {
+        System.out.println("""
+                
+                2) Desenvolva um programa que receba um número do usuário e escreva a
+                tabuada dele.
+                
+                """);
         int number;
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite um numero: ");
