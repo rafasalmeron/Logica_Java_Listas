@@ -7,4 +7,7 @@ package com.logica.lista3;
 //um alerta: "Última tentativa, mais um erro seu acesso será bloqueado!"
 
 public class Exc5 {
+    public static void main(String[] args) {
+        com.logica.lista2.Exc5.main(args);
+    }
 }
