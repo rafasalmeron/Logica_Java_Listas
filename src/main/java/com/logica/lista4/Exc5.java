@@ -13,14 +13,11 @@ public class Exc5 {
                 
                 6) Aproveite a questão anterior e adicionar a opção do usuário remover
                 um item.
+                
+                
                 """);
         String[] lista_de_compras = new String[10];
         int option;
-        String item;
-        String itemRemover="";
-        String[] novaLista = new WrapperArray(lista_de_compras);
-        String remove = new Wrapper(itemRemover).toString();
-        Scanner entrada = new Scanner(System.in);
 
         do{
             System.out.println("""
@@ -28,31 +25,45 @@ public class Exc5 {
                     
                     Digite 1 para inserir um item.
                     Digite 2 ver a lista.
+                    Digite 3 para remover um item.
                     Digite 0 para sair.
                     """);
-            option = entrada.nextInt();
+            option = sc.nextInt();
+            sc.nextLine();
+
             switch(option){
                 case 1 -> {
+                    System.out.println("Descreva o item para adicionar à lista: ");
+                    String item = sc.nextLine();
+                    boolean added = false;
                     for (int i = 0; i < lista_de_compras.length; i++) {
                         if (lista_de_compras[i] == null){
-                            System.out.println("Descreva o item para adicionar a lista:");
-                            lista_de_compras[i] = item = entrada.next();
+                            lista_de_compras[i] = item;
+                            added = true;
                             break;
                         }
                     }
+                    if (!added){
+                        System.out.println("A lista está cheia!");
+                    }
                 }
                 case 2 -> {
-                    for (int i = 0; true;) {
-                        while(lista_de_compras[i] != null){
-                            System.out.println(lista_de_compras[i]);
-                            i++;
-                        }break;
+                    System.out.println("Lista de compras: ");
+                    for (String s : lista_de_compras) {
+                        int i = 0;
+                        i++;
+                        if (s != null){
+                            System.out.printf("%d. %s",i, s);
+                        }
                     }
                 }
                 case 3 ->{
-                        method.metodo(novaLista,remove);
+                    WrapperArray newList = new WrapperArray(lista_de_compras);
+                    Wrapper itemRemove = new Wrapper("");
+                    method.metodo(newList.refArray, itemRemove.ref);
                 }
                 case 0 -> System.out.println("Fechando lista....");
+                default -> System.out.println("Opção invalida!");
             }
         }while(option != 0);
     }
