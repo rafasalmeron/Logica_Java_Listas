@@ -4,4 +4,11 @@ package com.logica.lista4;
 //por ordem de preço (crescente)
 
 public class Exc8 {
+    public static void main(String[] args) {
+        System.out.println("""
+                
+                
+                
+                """);
+    }
 }

@@ -3,9 +3,8 @@ import java.util.Scanner;
 
 public class Exc1 {
     public static void main(String[] args) {
-        System.out.println("\nAQUI COMEÇAR A LISTA 2");
         System.out.println("""
-                
+                Lista 2
                 Exercício 1
                 
                 1) Escreva um programa que recebe um número

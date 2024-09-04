@@ -5,4 +5,11 @@ package com.logica.lista4;
 //        o item e para o preço).
 
 public class Exc7 {
+    public static void main(String[] args) {
+        System.out.println("""
+                
+                
+                
+                """);
+    }
 }
