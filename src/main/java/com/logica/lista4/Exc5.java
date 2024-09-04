@@ -3,16 +3,23 @@ import java.util.Scanner;
 
 public class Exc5 {
     public static void main(String[] args) {
+        Exc6 method = new Exc6();
+        Scanner sc = new Scanner(System.in);
         System.out.println("""
                 
-                //5) Escreva um programa que sirva como uma lista de compras de
-                //mercado. Você irá criar um menu que pergunte se o usuário quer inserir
-                //um item ou ver a lista.
+                5) Escreva um programa que sirva como uma lista de compras de
+                mercado. Você irá criar um menu que pergunte se o usuário quer inserir
+                um item ou ver a lista.
                 
+                6) Aproveite a questão anterior e adicionar a opção do usuário remover
+                um item.
                 """);
         String[] lista_de_compras = new String[10];
         int option;
         String item;
+        String itemRemover="";
+        String[] novaLista = new WrapperArray(lista_de_compras);
+        String remove = new Wrapper(itemRemover).toString();
         Scanner entrada = new Scanner(System.in);
 
         do{
@@ -41,6 +48,9 @@ public class Exc5 {
                             i++;
                         }break;
                     }
+                }
+                case 3 ->{
+                        method.metodo(novaLista,remove);
                 }
                 case 0 -> System.out.println("Fechando lista....");
             }
