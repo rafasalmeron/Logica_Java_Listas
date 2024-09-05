@@ -14,6 +14,10 @@ isso também será possível.
 [Lista  1 - Operações Matemáticas.pdf](https://github.com/user-attachments/files/16827147/Lista.1.-.Operacoes.Matematicas.pdf)  
 ### Lista 2
 [Lista 2 - Desvios Condicionais.pdf](https://github.com/user-attachments/files/16827149/Lista.2.-.Desvios.Condicionais.pdf)
+### Lista 3
+[Lista 3 - Laços de Repetição.pdf](https://github.com/user-attachments/files/16883483/Lista.3.-.Lacos.de.Repeticao.pdf)
+### Lista 4
+[Lista 4 Array e Matriz.pdf](https://github.com/user-attachments/files/16883484/Lista.4.Array.e.Matriz.pdf)
 
 #### Detalhes do Projeto  
 1. Java 17
