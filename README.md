@@ -6,7 +6,7 @@
 Todos os exercícios propostos foram realizados.  
 Para tornar o processo mais dinâmico,  
 criei uma forma de executar todos os exercícios de uma só vez.  
-No entanto, se preferir acessar um exercício específico de qualquer uma das duas listas,  
+No entanto, se preferir acessar um exercício específico de qualquer uma das listas,  
 isso também será possível.  
 
 
