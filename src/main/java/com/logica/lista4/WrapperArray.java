@@ -1,8 +1,10 @@
-package com.logica.lista4;
-
-public class WrapperArray {
-    public String[] refArray;
-    public WrapperArray(String[] refArray) {
-        this.refArray = refArray;
-    }
-}
+//package com.logica.lista4;
+//
+//import java.util.List;
+//
+//public class WrapperArray {
+//    public List<String> refArray;
+//    public WrapperArray(List<String> refArray) {
+//        this.refArray = refArray;
+//    }
+//}

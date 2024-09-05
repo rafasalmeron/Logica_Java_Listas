@@ -1,11 +1,10 @@
 package com.logica.lista4;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+import java.util.Map.Entry;
+import java.util.HashMap;
 
 public class Exc5 {
-    public static void main(String[] args) {
-        Exc6 method = new Exc6();
+    public static void main() {
         Scanner sc = new Scanner(System.in);
         System.out.println("""
                 
@@ -23,10 +22,11 @@ public class Exc5 {
                 8) Aproveite os códigos anteriores e implemente a função de impressão
                 por ordem de preço (crescente)
                 """);
-        String[] lista_de_compras = new String[777];
-        List<Double> preco_Item = new ArrayList<>(200);
+        List<String> lista_de_compras = new ArrayList<>(777);
+        List<Double> preco_Item = new ArrayList<>(222);
+        Map<String, Double> compras = new HashMap<>();
 
-        int indiceLista = 0, option;
+        int option;
 
         do{
             System.out.println("""
@@ -44,15 +44,12 @@ public class Exc5 {
             switch(option){
                 case 1 -> {
                     System.out.println("Descreva o item para adicionar à lista: ");
-
                     String item = sc.nextLine();
-
-                    lista_de_compras[indiceLista] = item;
-                    indiceLista++;
 
                     System.out.println("Qual o valor do item?");
                     String price = sc.nextLine();
-                    preco_Item.add(Double.parseDouble(price));
+
+                    compras.put(item, Double.parseDouble(price));
 //                    boolean added = false;
 //                    for (int i = 0; i < lista_de_compras.length; i++) {
 //                        if (lista_de_compras[i] == null){
@@ -67,17 +64,32 @@ public class Exc5 {
                 }
                 case 2 -> {
                     System.out.println("Lista de compras: ");
-                    if (indiceLista > 0) {
-                        for (int i = 0; i < indiceLista; i++) {
-                            System.out.printf("%d. %s",i+1, lista_de_compras[i]);
-                            System.out.printf(": R$ %.2f\n", preco_Item.get(i));
-                        }
+//                        for (int i = 0; i < lista_de_compras.size(); i++) {
+////                            Collections.sort(preco_Item);
+////                            System.out.printf("%d. %s",i+1, lista_de_compras.get(i));
+////                            System.out.printf(": R$ %s\n", preco_Item.get(i));
+//                            System.out.printf("%d. %s",i+1, lista_de_compras.get(i));
+//                            System.out.printf(": R$ %s\n", preco_Item.get(i));
+//                    }
+//                    Set<String> chaves = compras.keySet();
+////                    for (String chave : chaves) {
+////                        double valor = compras.get(chave);
+////                        System.out.printf("%s : R$ %.2f\n", chave, valor);
+////                    }
+//                    compras.forEach((k, v) -> System.out.printf("%s : R$ %.2f\n", k, v));
+                    List<Map.Entry<String, Double>> list = new ArrayList<>(compras.entrySet());
+                    list.sort(Map.Entry.comparingByValue());
+                    for(int i = 0; i < list.size(); i++){
+                        System.out.printf("%s R$ %.2f\n", list.get(i).getKey(), list.get(i).getValue());
                     }
                 }
                 case 3 -> {
-                    WrapperArray newList = new WrapperArray(lista_de_compras);
-                    Wrapper itemRemove = new Wrapper("");
-                    method.metodo(newList.refArray, itemRemove.ref);
+                    System.out.println("Qual item deseja remover?");
+                    String item = sc.nextLine();
+                    compras.remove(item);
+//                    WrapperArray newList = new WrapperArray(lista_de_compras);
+//                    Wrapper itemRemove = new Wrapper("");
+//                    method.metodo(newList.refArray, itemRemove.ref);
                 }
 //                case 4 -> {
 //                    System.out.println("""
@@ -95,3 +107,5 @@ public class Exc5 {
         }while(option != 0);
     }
 }
+// referência: https://www.dio.me/articles/explorando-o-map-em-java-como-utilizar-esta-funcao-poderosa-para-manipular-colecoes-de-dados
+//https://www.delftstack.com/pt/howto/java/how-to-sort-a-map-by-value-in-java/#ordenar-um-mapkey-value-utilizando-sort-m%c3%a9todo-em-java

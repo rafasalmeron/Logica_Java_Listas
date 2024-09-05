@@ -2,7 +2,7 @@ package com.logica.lista3;
 import java.util.Scanner;
 
 public class Exc4 {
-    public static void main(String[] args) {
+    public static void main() {
         System.out.println("""
                 
                 4) Jogo da adivinhação. Peça para alguém escolher um número. Depois peça

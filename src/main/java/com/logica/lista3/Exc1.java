@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class Exc1 {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main() {
         System.out.println("""
                 Lista 3
                 1) Escreva um programa que sirva como um cronômetro. O usuário deve

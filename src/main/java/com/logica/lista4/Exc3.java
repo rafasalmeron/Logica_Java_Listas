@@ -1,6 +1,6 @@
 package com.logica.lista4;
 public class Exc3 {
-    public static void main(String[] args) {
+    public static void main() {
         System.out.println("""
                 
                 3) Ainda utilizando o exercício do mercado, calcule o ticket médio de

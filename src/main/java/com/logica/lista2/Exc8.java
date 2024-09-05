@@ -142,7 +142,7 @@ public class Exc8 {
         System.out.println(scr.mensagemSW);
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         System.out.println("""
                 
                 Exercício 8

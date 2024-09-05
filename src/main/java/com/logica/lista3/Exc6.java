@@ -2,7 +2,7 @@ package com.logica.lista3;
 import java.util.Scanner;
 
 public class Exc6 {
-    public static void main(String[] args) {
+    public static void main() {
         System.out.println("""
                 
                 6) Escreva um programa que seja capaz de desenhar uma pirâmide de

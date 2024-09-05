@@ -1,6 +1,6 @@
 package com.logica.lista4;
 public class Exc1 {
-    public static void main(String[] args) {
+    public static void main() {
         System.out.println("""
                 Lista 4
                 1) Voce é gerente de um supermercado e sabe que os valores das

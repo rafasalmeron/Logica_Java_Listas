@@ -1,6 +1,6 @@
 package com.logica.lista4;
 public class Exc2 {
-    public static void main(String[] args) {
+    public static void main() {
         System.out.println("""
                 
                 2) Agora que voce sabe o fechamento do dia, monte um código que

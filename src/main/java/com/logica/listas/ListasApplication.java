@@ -19,14 +19,28 @@ public class ListasApplication {
         com.logica.lista1.Exc7.main(args);
         com.logica.lista1.Exc8.main(args);
         //LISTA 2
-        com.logica.lista2.Exc1.main(args);
-        com.logica.lista2.Exc2.main(args);
-        com.logica.lista2.Exc3.main(args);
-        com.logica.lista2.Exc4.main(args);
-        com.logica.lista2.Exc5.main(args);
-        com.logica.lista2.Exc6.main(args);
-        com.logica.lista2.Exc7.main(args);
-        com.logica.lista2.Exc8.main(args);
+        com.logica.lista2.Exc1.main();
+        com.logica.lista2.Exc2.main();
+        com.logica.lista2.Exc3.main();
+        com.logica.lista2.Exc4.main();
+        com.logica.lista2.Exc5.main();
+        com.logica.lista2.Exc6.main();
+        com.logica.lista2.Exc7.main();
+        com.logica.lista2.Exc8.main();
+        //Lista 3
+        com.logica.lista3.Exc1.main();
+        com.logica.lista3.Exc2.main();
+        com.logica.lista3.Exc3.main();
+        com.logica.lista3.Exc4.main();
+        com.logica.lista3.Exc5.main();
+        com.logica.lista3.Exc6.main();
+        com.logica.lista3.Exc7.main();
+        //Lista 4
+        com.logica.lista4.Exc1.main();
+        com.logica.lista4.Exc2.main();
+        com.logica.lista4.Exc3.main();
+        com.logica.lista4.Exc4.main();
+        com.logica.lista4.Exc5.main();
     }
 
     public static void choice(String[] args) {
@@ -42,6 +56,8 @@ public class ListasApplication {
                 
                 Digite 1 para LISTA 1.
                 Digite 2 para LISTA 2.
+                Digite 3 para LISTA 3.
+                Digite 4 para LISTA 4.
                 Digite 0 para SAIR.
                 
                 """);
@@ -64,7 +80,8 @@ public class ListasApplication {
                     case 8 -> com.logica.lista1.Exc8.main(args);
                     default -> System.out.println("Opção inválida!");
                 }
-            } else if (esc == 2) {
+            }
+            if (esc == 2) {
                 System.out.println("""
                         LISTA 2
                         Digite de 1 a 8 para escolher qual exercício quer acessar:
@@ -72,19 +89,52 @@ public class ListasApplication {
                         """);
                 esc = sc.nextInt();
                 switch (esc) {
-                    case 1 -> com.logica.lista2.Exc1.main(args);
-                    case 2 -> com.logica.lista2.Exc2.main(args);
-                    case 3 -> com.logica.lista2.Exc3.main(args);
-                    case 4 -> com.logica.lista2.Exc4.main(args);
-                    case 5 -> com.logica.lista2.Exc5.main(args);
-                    case 6 -> com.logica.lista2.Exc6.main(args);
-                    case 7 -> com.logica.lista2.Exc7.main(args);
-                    case 8 -> com.logica.lista2.Exc8.main(args);
+                    case 1 -> com.logica.lista2.Exc1.main();
+                    case 2 -> com.logica.lista2.Exc2.main();
+                    case 3 -> com.logica.lista2.Exc3.main();
+                    case 4 -> com.logica.lista2.Exc4.main();
+                    case 5 -> com.logica.lista2.Exc5.main();
+                    case 6 -> com.logica.lista2.Exc6.main();
+                    case 7 -> com.logica.lista2.Exc7.main();
+                    case 8 -> com.logica.lista2.Exc8.main();
                     default -> System.out.println("Opção inválida!");
                 }
-            } else {
-                System.out.println("Opção inválida!");
             }
+            if (esc == 3) {
+                System.out.println("""
+                        LISTA 3
+                        Digite de 1 a 7 para escolher qual exercício quer acessar:
+                        
+                        """);
+                esc = sc.nextInt();
+                switch (esc) {
+                    case 1 -> com.logica.lista3.Exc1.main();
+                    case 2 -> com.logica.lista3.Exc2.main();
+                    case 3 -> com.logica.lista3.Exc3.main();
+                    case 4 -> com.logica.lista3.Exc4.main();
+                    case 5 -> com.logica.lista3.Exc5.main();
+                    case 6 -> com.logica.lista3.Exc6.main();
+                    case 7 -> com.logica.lista3.Exc7.main();
+                    default -> System.out.println("Opção inválida!");
+                }
+            }
+            if (esc == 4) {
+                System.out.println("""
+                        LISTA 4
+                        Digite de 1 a 5 para escolher qual exercício quer acessar:
+                        
+                        """);
+                esc = sc.nextInt();
+                switch (esc) {
+                    case 1 -> com.logica.lista4.Exc1.main();
+                    case 2 -> com.logica.lista4.Exc2.main();
+                    case 3 -> com.logica.lista4.Exc3.main();
+                    case 4 -> com.logica.lista4.Exc4.main();
+                    case 5 -> com.logica.lista4.Exc5.main();
+                    default -> System.out.println("Opção inválida!");
+                }
+            }
+
         } while(esc != 0);
     }
 
