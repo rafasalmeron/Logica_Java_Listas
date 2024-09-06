@@ -11,7 +11,7 @@ public class Exc3 {
                 4. Nenhuma das opções.
                 """);
     }
-    public static void main() {
+    public static void main(String[] args) {
         System.out.println("""
                 
                 Exercício 3

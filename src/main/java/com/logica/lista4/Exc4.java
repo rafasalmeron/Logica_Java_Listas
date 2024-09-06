@@ -1,6 +1,6 @@
 package com.logica.lista4;
 public class Exc4 {
-    public static void main() {
+    public static void main(String[] args) {
         System.out.println("""
                 
                 4) Escreva um código que irá percorrer uma lista de números inteiros
@@ -10,8 +10,8 @@ public class Exc4 {
                 """);
         int[] lista = { 3, 5, 6, 7, 8, 10, 22, 55, 110 };
         int pares=0;
-        for (int i = 0; i < lista.length; i++) {
-            if (lista[i] % 2  == 0  ) {
+        for (int j : lista) {
+            if (j % 2 == 0) {
                 pares++;
             }
         }

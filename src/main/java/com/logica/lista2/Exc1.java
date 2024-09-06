@@ -2,7 +2,7 @@ package com.logica.lista2;
 import java.util.Scanner;
 
 public class Exc1 {
-    public static void main() {
+    public static void main(String[] args) {
         System.out.println("""
                 Lista 2
                 Exercício 1

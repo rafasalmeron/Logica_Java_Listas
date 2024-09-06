@@ -11,10 +11,12 @@ public class Exc2 {
                 sobrenome do usuário e escreva na tela: "Olá, -usuário-".
                 
                 """);
-        String nome;
+        String nome, sobrenome;
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite o nome do aluno: ");
         nome = sc.nextLine();
-        System.out.println("Olá, " + nome +"!");
+        System.out.println("Digite seu sobrenome:");
+        sobrenome = sc.nextLine();
+        System.out.println("Olá, " + nome + sobrenome +"!");
     }
 }

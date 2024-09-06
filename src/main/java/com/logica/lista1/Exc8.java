@@ -22,6 +22,6 @@ public class Exc8 {
         F = sc.nextDouble();
         C=(F-32)/1.8;
         System.out.println("Conversão de Fahrenheit para Celsius");
-        System.out.printf("%.1f°F = %.1f°C.",F,C);
+        System.out.printf("%.1f°F = %.1f°C.\n\n",F,C);
     }
 }

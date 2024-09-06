@@ -2,7 +2,7 @@ package com.logica.lista3;
 import java.util.Scanner;
 
 public class Exc2 {
-    public static void main() {
+    public static void main(String[] args) {
         System.out.println("""
                 
                 2) Desenvolva um programa que receba um número do usuário e escreva a

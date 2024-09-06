@@ -7,7 +7,7 @@ import java.util.Scanner;
 @SpringBootApplication
 public class ListasApplication {
 
-    public static void allIn(String[] args) {
+    public static void allIn(String[] args) throws InterruptedException {
         //LISTA 1
 
         com.logica.lista1.Exc1.main(args);
@@ -19,31 +19,31 @@ public class ListasApplication {
         com.logica.lista1.Exc7.main(args);
         com.logica.lista1.Exc8.main(args);
         //LISTA 2
-        com.logica.lista2.Exc1.main();
-        com.logica.lista2.Exc2.main();
-        com.logica.lista2.Exc3.main();
-        com.logica.lista2.Exc4.main();
-        com.logica.lista2.Exc5.main();
-        com.logica.lista2.Exc6.main();
-        com.logica.lista2.Exc7.main();
-        com.logica.lista2.Exc8.main();
+        com.logica.lista2.Exc1.main(args);
+        com.logica.lista2.Exc2.main(args);
+        com.logica.lista2.Exc3.main(args);
+        com.logica.lista2.Exc4.main(args);
+        com.logica.lista2.Exc5.main(args);
+        com.logica.lista2.Exc6.main(args);
+        com.logica.lista2.Exc7.main(args);
+        com.logica.lista2.Exc8.main(args);
         //Lista 3
-        com.logica.lista3.Exc1.main();
-        com.logica.lista3.Exc2.main();
-        com.logica.lista3.Exc3.main();
-        com.logica.lista3.Exc4.main();
-        com.logica.lista3.Exc5.main();
-        com.logica.lista3.Exc6.main();
-        com.logica.lista3.Exc7.main();
+        com.logica.lista3.Exc1.main(args);
+        com.logica.lista3.Exc2.main(args);
+        com.logica.lista3.Exc3.main(args);
+        com.logica.lista3.Exc4.main(args);
+        com.logica.lista3.Exc5.main(args);
+        com.logica.lista3.Exc6.main(args);
+        com.logica.lista3.Exc7.main(args);
         //Lista 4
-        com.logica.lista4.Exc1.main();
-        com.logica.lista4.Exc2.main();
-        com.logica.lista4.Exc3.main();
-        com.logica.lista4.Exc4.main();
-        com.logica.lista4.Exc5.main();
+        com.logica.lista4.Exc1.main(args);
+        com.logica.lista4.Exc2.main(args);
+        com.logica.lista4.Exc3.main(args);
+        com.logica.lista4.Exc4.main(args);
+        com.logica.lista4.Exc5.main(args);
     }
 
-    public static void choice(String[] args) {
+    public static void choice(String[] args) throws InterruptedException {
         int esc;
         Scanner sc = new Scanner(System.in);
 
@@ -89,14 +89,14 @@ public class ListasApplication {
                         """);
                 esc = sc.nextInt();
                 switch (esc) {
-                    case 1 -> com.logica.lista2.Exc1.main();
-                    case 2 -> com.logica.lista2.Exc2.main();
-                    case 3 -> com.logica.lista2.Exc3.main();
-                    case 4 -> com.logica.lista2.Exc4.main();
-                    case 5 -> com.logica.lista2.Exc5.main();
-                    case 6 -> com.logica.lista2.Exc6.main();
-                    case 7 -> com.logica.lista2.Exc7.main();
-                    case 8 -> com.logica.lista2.Exc8.main();
+                    case 1 -> com.logica.lista2.Exc1.main(args);
+                    case 2 -> com.logica.lista2.Exc2.main(args);
+                    case 3 -> com.logica.lista2.Exc3.main(args);
+                    case 4 -> com.logica.lista2.Exc4.main(args);
+                    case 5 -> com.logica.lista2.Exc5.main(args);
+                    case 6 -> com.logica.lista2.Exc6.main(args);
+                    case 7 -> com.logica.lista2.Exc7.main(args);
+                    case 8 -> com.logica.lista2.Exc8.main(args);
                     default -> System.out.println("Opção inválida!");
                 }
             }
@@ -108,13 +108,13 @@ public class ListasApplication {
                         """);
                 esc = sc.nextInt();
                 switch (esc) {
-                    case 1 -> com.logica.lista3.Exc1.main();
-                    case 2 -> com.logica.lista3.Exc2.main();
-                    case 3 -> com.logica.lista3.Exc3.main();
-                    case 4 -> com.logica.lista3.Exc4.main();
-                    case 5 -> com.logica.lista3.Exc5.main();
-                    case 6 -> com.logica.lista3.Exc6.main();
-                    case 7 -> com.logica.lista3.Exc7.main();
+                    case 1 -> com.logica.lista3.Exc1.main(args);
+                    case 2 -> com.logica.lista3.Exc2.main(args);
+                    case 3 -> com.logica.lista3.Exc3.main(args);
+                    case 4 -> com.logica.lista3.Exc4.main(args);
+                    case 5 -> com.logica.lista3.Exc5.main(args);
+                    case 6 -> com.logica.lista3.Exc6.main(args);
+                    case 7 -> com.logica.lista3.Exc7.main(args);
                     default -> System.out.println("Opção inválida!");
                 }
             }
@@ -126,11 +126,11 @@ public class ListasApplication {
                         """);
                 esc = sc.nextInt();
                 switch (esc) {
-                    case 1 -> com.logica.lista4.Exc1.main();
-                    case 2 -> com.logica.lista4.Exc2.main();
-                    case 3 -> com.logica.lista4.Exc3.main();
-                    case 4 -> com.logica.lista4.Exc4.main();
-                    case 5 -> com.logica.lista4.Exc5.main();
+                    case 1 -> com.logica.lista4.Exc1.main(args);
+                    case 2 -> com.logica.lista4.Exc2.main(args);
+                    case 3 -> com.logica.lista4.Exc3.main(args);
+                    case 4 -> com.logica.lista4.Exc4.main(args);
+                    case 5 -> com.logica.lista4.Exc5.main(args);
                     default -> System.out.println("Opção inválida!");
                 }
             }
@@ -138,7 +138,7 @@ public class ListasApplication {
         } while(esc != 0);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         SpringApplication.run(ListasApplication.class, args);
         int esc;
         Scanner sc = new Scanner(System.in);

@@ -1,6 +1,6 @@
 package com.logica.lista4;
 public class Exc1 {
-    public static void main() {
+    public static void main(String[] args) {
         System.out.println("""
                 Lista 4
                 1) Voce é gerente de um supermercado e sabe que os valores das
@@ -8,8 +8,8 @@ public class Exc1 {
                 fechamento (soma) de vendas do dia de maneira automatizada.
                 
                 """);
-        double vendas[] = {150.00, 120.15, 55.90, 33.60, 77.50};
-        double total = 0;
+        double[] vendas = {150.00, 120.15, 55.90, 33.60, 77.50};
+        double total = 0.0;
 //        for (int i = 0; i < vendas.length; i++) {
 //            total += vendas;
 //        }

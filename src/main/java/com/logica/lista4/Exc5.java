@@ -1,10 +1,9 @@
 package com.logica.lista4;
 import java.util.*;
-import java.util.Map.Entry;
 import java.util.HashMap;
 
 public class Exc5 {
-    public static void main() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("""
                 
@@ -22,8 +21,8 @@ public class Exc5 {
                 8) Aproveite os códigos anteriores e implemente a função de impressão
                 por ordem de preço (crescente)
                 """);
-        List<String> lista_de_compras = new ArrayList<>(777);
-        List<Double> preco_Item = new ArrayList<>(222);
+//        List<String> lista_de_compras = new ArrayList<>(777);
+//        List<Double> preco_Item = new ArrayList<>(222);
         Map<String, Double> compras = new HashMap<>();
 
         int option;
@@ -46,10 +45,25 @@ public class Exc5 {
                     System.out.println("Descreva o item para adicionar à lista: ");
                     String item = sc.nextLine();
 
-                    System.out.println("Qual o valor do item?");
-                    String price = sc.nextLine();
+                    // Identifiquei que ao atribuir o valor com ponto o código quebrava,
+                    // para evitar isso fiz essa verificação para ficar claro o problema no codigo
+                    // e evitar o erro e a quebra do sistema.
+                    boolean verification;
+                    String priceStr;
+                    do {
+                        System.out.println("Qual o valor do item?");
+                        priceStr = sc.nextLine();
+                        verification = false;
+                        if (priceStr.contains(".")) {
+                            System.out.println("Por favor, utilizar vígula ao invés de ponto ao dizer o valor para separar os decimais");
+                            verification = true;
+                        }
+                    } while (verification);
 
-                    compras.put(item, Double.parseDouble(price));
+
+                    double price = Double.parseDouble(priceStr.replace(",", "."));
+
+                    compras.put(item, price);
 //                    boolean added = false;
 //                    for (int i = 0; i < lista_de_compras.length; i++) {
 //                        if (lista_de_compras[i] == null){
@@ -79,8 +93,8 @@ public class Exc5 {
 //                    compras.forEach((k, v) -> System.out.printf("%s : R$ %.2f\n", k, v));
                     List<Map.Entry<String, Double>> list = new ArrayList<>(compras.entrySet());
                     list.sort(Map.Entry.comparingByValue());
-                    for(int i = 0; i < list.size(); i++){
-                        System.out.printf("%s R$ %.2f\n", list.get(i).getKey(), list.get(i).getValue());
+                    for (Map.Entry<String, Double> stringDoubleEntry : list) {
+                        System.out.printf("%s R$ %.2f\n", stringDoubleEntry.getKey(), stringDoubleEntry.getValue());
                     }
                 }
                 case 3 -> {
